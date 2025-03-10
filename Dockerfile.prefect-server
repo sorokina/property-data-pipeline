@@ -1,0 +1,10 @@
+# Use the official Prefect image as a base
+FROM prefecthq/prefect:latest
+
+# Install docker-compose
+RUN apt-get update && \
+    apt-get install -y curl && \
+    curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
+    chmod +x /usr/local/bin/docker-compose
+
+# The rest of the image will use the same Prefect server image settings
