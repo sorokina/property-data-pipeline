@@ -17,4 +17,8 @@ This project processes property data from a JSONL file and loads it into a DuckD
 4. docker-compose up
 
 Dashboard Prefect (example view):
-![Bildschirmfoto 2025-03-10 um 20.06.51.png](../../../../var/folders/zt/6s0842wn3w9_gsq_z4skjt940000gn/T/TemporaryItems/%28screencaptureui-Dokument%20sichern%29/Bildschirmfoto%202025-03-10%20um%2020.06.51.png)
+
+
+![Bildschirmfoto 2025-03-08 um 19 37 02](https://github.com/user-attachments/assets/d4c88629-ab0c-41b7-b581-9b0502bf1910)
+
+![Bildschirmfoto 2025-03-08 um 19 42 23](https://github.com/user-attachments/assets/7f35b965-9d72-4c1d-abef-297327bc13c4)
