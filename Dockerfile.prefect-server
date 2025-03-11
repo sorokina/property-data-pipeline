@@ -1,10 +1,9 @@
-# Use the official Prefect image as a base
-FROM prefecthq/prefect:latest
+# Use the official Prefect image
+FROM prefecthq/prefect:3-latest
 
-# Install docker-compose
-RUN apt-get update && \
-    apt-get install -y curl && \
-    curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
-    chmod +x /usr/local/bin/docker-compose
+# Expose Prefect Server port for communication
+EXPOSE 4200
 
-# The rest of the image will use the same Prefect server image settings
+# Start the Prefect server on port 4200 and listen on all interfaces
+CMD prefect server start --host 0.0.0.0 --port 4200
+

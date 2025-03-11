@@ -1,5 +1,5 @@
+prefect
 duckdb>=0.7.1
 pandas
 jsonlines
 
-prefect
